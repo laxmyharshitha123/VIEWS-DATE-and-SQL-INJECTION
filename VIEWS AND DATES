@@ -1,0 +1,42 @@
+## VIEWS , DATE
+1. DATES: datatypes :
+    -> date
+    -> datetime
+    -> timestamp
+    -> year
+    -> yyyy-mm-dd
+    -> yyyy-mm-dd hh:mi:ss
+    -> yyyy-mm-dd hh:mi:ss
+    -> yyyy or yy;
+    1. create table orderdate(
+    -> orderid int auto_increment,
+    -> productname varchar(25),
+    -> orderdate date,
+    -> primary key(orderid));
+   2. create table orderdate1(
+    -> orderid int auto_increment,
+    -> productname varchar(25),
+    -> orderdate datetime,
+    -> primary key(orderid));
+   3.  create table orderdate2(
+    -> orderid int auto_increment,
+    -> productname varchar(25),
+    -> orderdate timestamp,
+    -> primary key(orderid));
+   4. create table orderdate3(
+    -> orderid int auto_increment,
+    -> productname varchar(25),
+    -> orderdate year,
+    -> primary key(orderid));
+2.VIEWS : it is a virtual table that is based on the result of a select query.it looks like a table ,but it doesnt store the data it just stores the query
+ SYNTAX : 1. CREATING A VIEW: create view viewname as
+                                -> select column1,column2...
+                                -> from table name
+                                -> where condition;
+        2 . UPDATING A VIEW: create or replace view viewname as
+                                -> select *from tablename
+                               -> where condition;
+       3 . DELETING A VIEW :  drop view viewname;
+
+
+              
